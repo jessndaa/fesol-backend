@@ -1,0 +1,49 @@
+name: Build and Push Image A docker registry
+on:
+  push:
+    branches:
+      - dev
+
+jobs:
+  build-push-to-cr:
+    environment: dev
+    name: Build and Push auth to artifact registry
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      issues: write
+      pull-requests: write
+
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v3
+
+    - uses: codfish/semantic-release-action@v2
+      id: semantic
+      with:
+        branches: |
+          [
+            '+([0-9])?(.{+([0-9]),x}).x',
+            'dev'
+          ]
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+    # - name: Build and push auth the container registry
+    #   if: steps.semantic.outputs.new-release-published == 'true'
+    #   uses: ./.github/actions/push_to_gcr
+    #   with:
+    #     project_id: ${{ vars.PROJECT_ID }}
+    #     image_id: auth-api
+    #     docker_file: apps/auth/Dockerfile
+    #     artifact: api-images
+    #     region: us-central1-docker.pkg.dev
+    #     tags: ${{ steps.semantic.outputs.release-version }},latest
+    #     service_account: ${{ secrets.GCP_ACTION_CRED }}
+
+
+
+
+
+
+

@@ -1,0 +1,77 @@
+name: push to artifact registry
+description: "Build a container image and Pushes it to Docker registry"
+
+inputs:
+  project_id:
+    description: "Username for image registry"
+    required: true
+  image_id:
+    description: "Username for image registry"
+    required: true
+  docker_file:
+    description: "Username for image registry"
+    required: true
+  service_account:
+    description: "Username for image registry"
+    required: true
+  region:
+    description: "Username for image registry"
+    required: true
+  artifact:
+    description: "container actifact "
+    required: true
+  tags:
+    description: "Username for image registry"
+    required: true
+
+
+runs:
+  using: "composite"
+  steps:
+    - name: Checkout
+      uses: actions/checkout@v3
+    - name: Build Docker Image
+      shell: bash
+      env:
+        DOCKER_FILE: ${{ github.workspace }}/${{inputs.docker_file}}
+        IMAGE_NAME:  ${{inputs.image_id}}
+        WORKDIR: ${{ github.workspace }}
+        TAGS: ${{inputs.tags}}
+      run: |-
+        IFS=',' read -r -a array <<< "$TAGS"
+        for i in "${array[@]}"
+        do
+          docker build -f $DOCKER_FILE  -t $IMAGE_NAME:$i $WORKDIR
+        done
+
+    - id: 'auth'
+      name: 'Google auth'
+      uses: 'google-github-actions/auth@v1'
+      with:
+        credentials_json: ${{ inputs.service_account }}
+
+    - name: 'Set up Cloud SDK'
+      uses: 'google-github-actions/setup-gcloud@v1'
+
+    - name: Configure Docker Client
+      shell: bash
+      env:
+        REGION: ${{inputs.region}}
+      run: |-
+        gcloud auth configure-docker $REGION --quiet
+
+    - name: Push Auth to Artifact Registry
+      shell: bash
+      env:
+        IMAGE_NAME: ${{inputs.image_id}}
+        PROJECT_ID: ${{inputs.project_id}}
+        REGION: ${{inputs.region}}
+        ARTIFACT: ${{inputs.artifact}}
+        TAGS: ${{inputs.tags}}
+      run: |-
+        IFS=',' read -r -a array <<< "$TAGS"
+        for i in "${array[@]}"
+        do
+          docker tag $IMAGE_NAME:$i $REGION/$PROJECT_ID/$ARTIFACT/$IMAGE_NAME:$i
+          docker push $REGION/$PROJECT_ID/$ARTIFACT/$IMAGE_NAME:$i
+        done

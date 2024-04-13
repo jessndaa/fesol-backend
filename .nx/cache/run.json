@@ -1,0 +1,21 @@
+{
+  "run": {
+    "command": "nx serve auth",
+    "startTime": "2024-04-13T00:47:00.581Z",
+    "endTime": "2024-04-13T00:47:02.478Z",
+    "inner": false
+  },
+  "tasks": [
+    {
+      "taskId": "auth:serve:development",
+      "target": "serve",
+      "projectName": "auth",
+      "hash": "17867432102644456179",
+      "startTime": "2024-04-13T00:47:00.598Z",
+      "endTime": "2024-04-13T00:47:02.478Z",
+      "params": "",
+      "cacheStatus": "cache-miss",
+      "status": 1
+    }
+  ]
+}
