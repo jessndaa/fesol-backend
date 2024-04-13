@@ -87,50 +87,6 @@
         "hash": "14954872453723519891"
       }
     ],
-    "credit-management-e2e": [
-      {
-        "file": "apps/credit-management-e2e/.eslintrc.json",
-        "hash": "13800677001662881425"
-      },
-      {
-        "file": "apps/credit-management-e2e/jest.config.ts",
-        "hash": "15577254345569982042"
-      },
-      {
-        "file": "apps/credit-management-e2e/project.json",
-        "hash": "6368837716266403624"
-      },
-      {
-        "file": "apps/credit-management-e2e/src/apps/credit-management/apps/credit-management.spec.ts",
-        "hash": "110394728024017389",
-        "deps": [
-          "npm:axios"
-        ]
-      },
-      {
-        "file": "apps/credit-management-e2e/src/support/global-setup.ts",
-        "hash": "2568409276037275290"
-      },
-      {
-        "file": "apps/credit-management-e2e/src/support/global-teardown.ts",
-        "hash": "5275447082211835490"
-      },
-      {
-        "file": "apps/credit-management-e2e/src/support/test-setup.ts",
-        "hash": "10984585515912236441",
-        "deps": [
-          "npm:axios"
-        ]
-      },
-      {
-        "file": "apps/credit-management-e2e/tsconfig.json",
-        "hash": "15443990093475294480"
-      },
-      {
-        "file": "apps/credit-management-e2e/tsconfig.spec.json",
-        "hash": "14954872453723519891"
-      }
-    ],
     "credit-management": [
       {
         "file": "apps/credit-management/.eslintrc.json",
@@ -211,6 +167,130 @@
         ]
       }
     ],
+    "credit-management-e2e": [
+      {
+        "file": "apps/credit-management-e2e/.eslintrc.json",
+        "hash": "13800677001662881425"
+      },
+      {
+        "file": "apps/credit-management-e2e/jest.config.ts",
+        "hash": "15577254345569982042"
+      },
+      {
+        "file": "apps/credit-management-e2e/project.json",
+        "hash": "6368837716266403624"
+      },
+      {
+        "file": "apps/credit-management-e2e/src/apps/credit-management/apps/credit-management.spec.ts",
+        "hash": "110394728024017389",
+        "deps": [
+          "npm:axios"
+        ]
+      },
+      {
+        "file": "apps/credit-management-e2e/src/support/global-setup.ts",
+        "hash": "2568409276037275290"
+      },
+      {
+        "file": "apps/credit-management-e2e/src/support/global-teardown.ts",
+        "hash": "5275447082211835490"
+      },
+      {
+        "file": "apps/credit-management-e2e/src/support/test-setup.ts",
+        "hash": "10984585515912236441",
+        "deps": [
+          "npm:axios"
+        ]
+      },
+      {
+        "file": "apps/credit-management-e2e/tsconfig.json",
+        "hash": "15443990093475294480"
+      },
+      {
+        "file": "apps/credit-management-e2e/tsconfig.spec.json",
+        "hash": "14954872453723519891"
+      }
+    ],
+    "core-app": [
+      {
+        "file": "apps/core-app/.eslintrc.json",
+        "hash": "13800677001662881425"
+      },
+      {
+        "file": "apps/core-app/jest.config.ts",
+        "hash": "12451571076636794575"
+      },
+      {
+        "file": "apps/core-app/project.json",
+        "hash": "16795210287684732711"
+      },
+      {
+        "file": "apps/core-app/src/app/app.controller.spec.ts",
+        "hash": "9499997688052526633",
+        "deps": [
+          "npm:@nestjs/testing"
+        ]
+      },
+      {
+        "file": "apps/core-app/src/app/app.controller.ts",
+        "hash": "9005150069945785676",
+        "deps": [
+          "npm:@nestjs/common"
+        ]
+      },
+      {
+        "file": "apps/core-app/src/app/app.module.ts",
+        "hash": "3163250445227373966",
+        "deps": [
+          "npm:@nestjs/common"
+        ]
+      },
+      {
+        "file": "apps/core-app/src/app/app.service.spec.ts",
+        "hash": "8587461140686713758",
+        "deps": [
+          "npm:@nestjs/testing"
+        ]
+      },
+      {
+        "file": "apps/core-app/src/app/app.service.ts",
+        "hash": "7390046449218394222",
+        "deps": [
+          "npm:@nestjs/common"
+        ]
+      },
+      {
+        "file": "apps/core-app/src/assets/.gitkeep",
+        "hash": "3244421341483603138"
+      },
+      {
+        "file": "apps/core-app/src/main.ts",
+        "hash": "11205222914964382693",
+        "deps": [
+          "npm:@nestjs/common",
+          "npm:@nestjs/core"
+        ]
+      },
+      {
+        "file": "apps/core-app/tsconfig.app.json",
+        "hash": "3171572500325445971"
+      },
+      {
+        "file": "apps/core-app/tsconfig.json",
+        "hash": "3490524966360018312"
+      },
+      {
+        "file": "apps/core-app/tsconfig.spec.json",
+        "hash": "11550347367511341917"
+      },
+      {
+        "file": "apps/core-app/webpack.config.js",
+        "hash": "10619490397189790225",
+        "deps": [
+          "npm:@nx/webpack"
+        ]
+      }
+    ],
     "auth": [
       {
         "file": "apps/auth/.eslintrc.json",
@@ -254,7 +334,7 @@
       },
       {
         "file": "apps/auth/src/app/app.service.ts",
-        "hash": "747343549211325704",
+        "hash": "1954521871912569941",
         "deps": [
           "npm:@nestjs/common"
         ]
@@ -289,6 +369,48 @@
         "deps": [
           "npm:@nx/webpack"
         ]
+      }
+    ],
+    "libs/utils": [
+      {
+        "file": "libs/utils/.eslintrc.json",
+        "hash": "13800677001662881425"
+      },
+      {
+        "file": "libs/utils/README.md",
+        "hash": "4429687046865772079"
+      },
+      {
+        "file": "libs/utils/jest.config.ts",
+        "hash": "17086969191125532000"
+      },
+      {
+        "file": "libs/utils/project.json",
+        "hash": "13544806140273330377"
+      },
+      {
+        "file": "libs/utils/src/index.ts",
+        "hash": "10086010445263152883"
+      },
+      {
+        "file": "libs/utils/src/lib/libs/utils.spec.ts",
+        "hash": "18183878778180877239"
+      },
+      {
+        "file": "libs/utils/src/lib/libs/utils.ts",
+        "hash": "18001849823296334637"
+      },
+      {
+        "file": "libs/utils/tsconfig.json",
+        "hash": "2840670722752396445"
+      },
+      {
+        "file": "libs/utils/tsconfig.lib.json",
+        "hash": "8188472110264778699"
+      },
+      {
+        "file": "libs/utils/tsconfig.spec.json",
+        "hash": "11550347367511341917"
       }
     ],
     "utils": [
@@ -375,128 +497,6 @@
       {
         "file": "apps/auth-e2e/tsconfig.spec.json",
         "hash": "14954872453723519891"
-      }
-    ],
-    "libs/utils": [
-      {
-        "file": "libs/utils/.eslintrc.json",
-        "hash": "13800677001662881425"
-      },
-      {
-        "file": "libs/utils/README.md",
-        "hash": "4429687046865772079"
-      },
-      {
-        "file": "libs/utils/jest.config.ts",
-        "hash": "17086969191125532000"
-      },
-      {
-        "file": "libs/utils/project.json",
-        "hash": "13544806140273330377"
-      },
-      {
-        "file": "libs/utils/src/index.ts",
-        "hash": "10086010445263152883"
-      },
-      {
-        "file": "libs/utils/src/lib/libs/utils.spec.ts",
-        "hash": "18183878778180877239"
-      },
-      {
-        "file": "libs/utils/src/lib/libs/utils.ts",
-        "hash": "18001849823296334637"
-      },
-      {
-        "file": "libs/utils/tsconfig.json",
-        "hash": "2840670722752396445"
-      },
-      {
-        "file": "libs/utils/tsconfig.lib.json",
-        "hash": "8188472110264778699"
-      },
-      {
-        "file": "libs/utils/tsconfig.spec.json",
-        "hash": "11550347367511341917"
-      }
-    ],
-    "core-app": [
-      {
-        "file": "apps/core-app/.eslintrc.json",
-        "hash": "13800677001662881425"
-      },
-      {
-        "file": "apps/core-app/jest.config.ts",
-        "hash": "12451571076636794575"
-      },
-      {
-        "file": "apps/core-app/project.json",
-        "hash": "16795210287684732711"
-      },
-      {
-        "file": "apps/core-app/src/app/app.controller.spec.ts",
-        "hash": "9499997688052526633",
-        "deps": [
-          "npm:@nestjs/testing"
-        ]
-      },
-      {
-        "file": "apps/core-app/src/app/app.controller.ts",
-        "hash": "9005150069945785676",
-        "deps": [
-          "npm:@nestjs/common"
-        ]
-      },
-      {
-        "file": "apps/core-app/src/app/app.module.ts",
-        "hash": "3163250445227373966",
-        "deps": [
-          "npm:@nestjs/common"
-        ]
-      },
-      {
-        "file": "apps/core-app/src/app/app.service.spec.ts",
-        "hash": "8587461140686713758",
-        "deps": [
-          "npm:@nestjs/testing"
-        ]
-      },
-      {
-        "file": "apps/core-app/src/app/app.service.ts",
-        "hash": "7390046449218394222",
-        "deps": [
-          "npm:@nestjs/common"
-        ]
-      },
-      {
-        "file": "apps/core-app/src/assets/.gitkeep",
-        "hash": "3244421341483603138"
-      },
-      {
-        "file": "apps/core-app/src/main.ts",
-        "hash": "11205222914964382693",
-        "deps": [
-          "npm:@nestjs/common",
-          "npm:@nestjs/core"
-        ]
-      },
-      {
-        "file": "apps/core-app/tsconfig.app.json",
-        "hash": "3171572500325445971"
-      },
-      {
-        "file": "apps/core-app/tsconfig.json",
-        "hash": "3490524966360018312"
-      },
-      {
-        "file": "apps/core-app/tsconfig.spec.json",
-        "hash": "11550347367511341917"
-      },
-      {
-        "file": "apps/core-app/webpack.config.js",
-        "hash": "10619490397189790225",
-        "deps": [
-          "npm:@nx/webpack"
-        ]
       }
     ]
   }

@@ -19651,3 +19651,44 @@ The following implicitDependencies point to non-existent project(s):
 [NX Daemon Server] - 2024-04-13T00:40:48.242Z - [WATCHER]: .nx/cache/d/daemon.log was modified
 [NX Daemon Server] - 2024-04-13T00:40:48.244Z - [WATCHER]: .nx/cache/d/daemon.log was modified
 [NX Daemon Server] - 2024-04-13T00:40:48.245Z - Done responding to the client null
+[NX Daemon Server] - 2024-04-13T01:35:55.091Z - Started listening on: \\.\pipe\nx\C:\Users\ADMIN~1.JES\AppData\Local\Temp\0cac7b8646940189e9a6\d.sock
+[NX Daemon Server] - 2024-04-13T01:35:55.099Z - [WATCHER]: Subscribed to changes within: d:\apps\fesol-backend (native)
+[NX Daemon Server] - 2024-04-13T01:35:55.104Z - Established a connection. Number of open connections: 1
+[NX Daemon Server] - 2024-04-13T01:35:55.107Z - Established a connection. Number of open connections: 2
+[NX Daemon Server] - 2024-04-13T01:35:55.109Z - [REQUEST]: Client Request for Project Graph Received
+[NX Daemon Server] - 2024-04-13T01:35:55.673Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-04-13T01:35:55.674Z - [REQUEST]: 
+[NX Daemon Server] - 2024-04-13T01:35:55.675Z - [REQUEST]: 
+[NX Daemon Server] - 2024-04-13T01:35:56.057Z - [REQUEST]: Responding to the client. project-graph
+[NX Daemon Server] - 2024-04-13T01:35:56.062Z - Time taken for 'total for creating and serializing project graph' 948.3965997695923ms
+[NX Daemon Server] - 2024-04-13T01:35:56.063Z - Closed a connection. Number of open connections: 1
+[NX Daemon Server] - 2024-04-13T01:35:56.064Z - Done responding to the client project-graph
+[NX Daemon Server] - 2024-04-13T01:35:56.064Z - Handled REQUEST_PROJECT_GRAPH. Handling time: 948. Response time: 7.
+[NX Daemon Server] - 2024-04-13T01:35:56.072Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-04-13T01:35:56.404Z - [REQUEST]: Client Request for Project Graph Received
+[NX Daemon Server] - 2024-04-13T01:35:56.404Z - [REQUEST]: Responding to the client. project-graph
+[NX Daemon Server] - 2024-04-13T01:35:56.406Z - Time taken for 'total for creating and serializing project graph' 0.527400016784668ms
+[NX Daemon Server] - 2024-04-13T01:35:56.407Z - Done responding to the client project-graph
+[NX Daemon Server] - 2024-04-13T01:35:56.407Z - Handled REQUEST_PROJECT_GRAPH. Handling time: 0. Response time: 3.
+[NX Daemon Server] - 2024-04-13T01:35:56.415Z - [REQUEST]: Client Request for Project Graph Received
+[NX Daemon Server] - 2024-04-13T01:35:56.415Z - [REQUEST]: Responding to the client. project-graph
+[NX Daemon Server] - 2024-04-13T01:35:56.416Z - Time taken for 'total for creating and serializing project graph' 0.37379980087280273ms
+[NX Daemon Server] - 2024-04-13T01:35:56.417Z - Done responding to the client project-graph
+[NX Daemon Server] - 2024-04-13T01:35:56.417Z - Handled REQUEST_PROJECT_GRAPH. Handling time: 0. Response time: 2.
+[NX Daemon Server] - 2024-04-13T01:35:56.458Z - Closed a connection. Number of open connections: 0
+[NX Daemon Server] - 2024-04-13T01:35:56.535Z - Established a connection. Number of open connections: 1
+[NX Daemon Server] - 2024-04-13T01:35:56.536Z - Established a connection. Number of open connections: 2
+[NX Daemon Server] - 2024-04-13T01:35:56.537Z - Closed a connection. Number of open connections: 1
+[NX Daemon Server] - 2024-04-13T01:35:56.539Z - [REQUEST]: Client Request for Project Graph Received
+[NX Daemon Server] - 2024-04-13T01:35:56.539Z - [REQUEST]: Responding to the client. project-graph
+[NX Daemon Server] - 2024-04-13T01:35:56.541Z - Time taken for 'total for creating and serializing project graph' 0.3357996940612793ms
+[NX Daemon Server] - 2024-04-13T01:35:56.541Z - Done responding to the client project-graph
+[NX Daemon Server] - 2024-04-13T01:35:56.541Z - Handled REQUEST_PROJECT_GRAPH. Handling time: 0. Response time: 2.
+[NX Daemon Server] - 2024-04-13T01:35:56.547Z - [REQUEST]: Responding to the client. handleRequestFileData
+[NX Daemon Server] - 2024-04-13T01:35:56.547Z - Done responding to the client handleRequestFileData
+[NX Daemon Server] - 2024-04-13T01:35:56.547Z - Handled REQUEST_FILE_DATA. Handling time: 1. Response time: 0.
+[NX Daemon Server] - 2024-04-13T01:35:56.548Z - Closed a connection. Number of open connections: 0
+[NX Daemon Server] - 2024-04-13T01:35:57.975Z - [WATCHER]: .gitignore was modified
+[NX Daemon Server] - 2024-04-13T01:35:57.975Z - [WATCHER]: Stopping the watcher for d:\apps\fesol-backend (sources)
+[NX Daemon Server] - 2024-04-13T01:35:57.975Z - [WATCHER]: Stopping the watcher for d:\apps\fesol-backend (outputs)
+[NX Daemon Server] - 2024-04-13T01:35:57.976Z - Server stopped because: "Stopping the daemon the set of ignored files changed (native)"
